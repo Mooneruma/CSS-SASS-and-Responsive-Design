@@ -1,0 +1,28 @@
+body {
+  background: #cccccc;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #cccccc 0%, #666666 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #666666));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cccccc 0%, #666666 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #cccccc 0%, #666666 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #cccccc 0%, #666666 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #cccccc 0%, #666666 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  }
+
+#main {
+  border: solid thick black;
+  background-color: grey;
+  margin: auto;
+  padding: 20px; }
+
+/*# sourceMappingURL=OutExample.css.map */

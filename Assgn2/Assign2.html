@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<!-- head does not display-->
+		<title>home</title>
+	</head>
+	
+	<body>
+	<style>
+	
+	*{
+		margin: auto;
+		padding: 0;
+		
+	}
+	
+	header{
+		background-color: black;
+		color: white;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+	}
+	
+	body{
+		background-image: url("image/fractal-1224853_1280.jpg");
+		text-align: center;
+	}
+
+	#sidebar{
+		background-color: white; 
+		box-shadow:3px 3px 3px 2px #797979;
+		height: 50px;
+		width: 100px;
+		padding: 5px;
+		text-align: center;
+		width: 23%;
+		float: left;
+		border: solid thick;
+		margin-top: 2em;
+	}
+
+	#main{
+		padding-top: 2em;
+		font-size: large;
+	}
+	
+	#wrapper{
+		background-color: white;
+		width: 800px;
+		padding-bottom: 5%;
+	}
+	
+	#footer{
+		background-color: black;
+		color: white;
+		width: 100%; 
+		padding: 0;
+		float: right;
+		margin-top: 10%;
+		padding-top: 2em;
+	}
+	
+	#TShad{
+		 text-shadow: #aaa 2px 2px 2px;
+	}
+	
+	#BShad{
+		background-color: #EEEEEE; 
+		box-shadow:3px 3px 3px 2px #797979; 
+		height: 100px;
+		width: 100px; 
+		padding: 5px;
+	}
+	
+	#BRounded{
+		border: 2px solid orange;
+		border-radius : 25px;
+		width: 100px;
+		padding: 10px ;
+		text-align:center;
+	}
+	
+	#Seperators{
+		background-color: black; 
+		height: 25px;
+		width: 100%; 
+	}
+	
+	p::after { 
+    content: " - Example: after P tag";
+	}
+	
+	p::before { 
+    content: "Example: before P tag - ";
+	}
+	
+	a:hover {
+    background-color: gray;
+	}
+	
+	input:focus {
+    background-color: yellow;
+	}
+
+	
+
+	</style>
+
+<div id = "wrapper">	
+		<header>
+			<u><h1>Kmoonpage.com</h1></u>
+		</header>
+	
+		<content id = "main">
+		
+			<br><b>Assignment 2 Selectors</b><br>
+			
+			<br><br>
+			
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>1. After<br>
+			this allow you to add things such as a comment after the selector of your choice.
+			<br><p> Like this </p><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>2. Before<br>
+			this allow you to add things such as a comment before the selector of your choice.
+			<br><p> Like this </p><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>3. Hover<br>
+			<a href = "http://kmoonpage.com/">Kmoonpage</a> This is a hover Example youll see it change color when you move your mouse over the link.
+			<br><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>4. Form Focus<br>
+			
+			<form>
+			First name: <input type="text" name="firstname"><br>
+			Last name: <input type="text" name="lastname">
+			</form>
+			
+			<br>This allows to highlight the select textbox.<br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>5. First of Type<br>
+			This allows you to change the first of ever type of selector. So if you had 4 P tags then this would effect the first in the sequence.
+			<br><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>6. In range<br>
+			With this in a selector if you type a number in a certain specified range it will be highlighted or changed to your specification.
+			<br><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>7. Invalid<br>
+			This will highlight content within a selector if is not valid. This would typically be used for email addresses.
+			<br><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>8. Read only input<br>
+			Allows you to creat a text box element that is read only meaning it wont be changable for the user.
+			<br><br>
+
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>9. Input required<br>
+			With this if you want to make required input content more noticable you can highlight required content boxes.
+			<br><br>
+			
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+				
+			<br>10. Input valid<br>
+			Highlights input content once it is valid. Also typically used for when collecting email addresses.
+			<br><br>
+			
+				<br>
+				<div id = "Seperators"></div>
+				<br>
+
+		
+		</content>
+
+		
+	
+	<content id ="footer">
+		Made for edjucational purposes.
+	</content>
+</div>	
+	</body>
+
+</html>

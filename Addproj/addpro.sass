@@ -1,0 +1,146 @@
+*
+  margin: auto
+  padding: 0
+
+header
+  background-color: black
+  color: white
+  padding-top: 0.5em
+  padding-bottom: 1em
+  font-family: "Impact", Charcoal, sans-serif
+  font-size: 36px
+  text-align: center
+
+body
+  background-image: url("coolBackground.jpg")
+  text-align: left
+
+#sidebar
+  background-color: white
+  box-shadow: 3px 3px 3px 2px #797979
+  height: 50px
+  width: 100px
+  padding: 5px
+  text-align: center
+  width: 23%
+  float: left
+  border: solid thick
+  margin-top: 2em
+
+#main
+  font-family: "Times New Roman", Times, serif
+  padding-top: 2em
+  text-size: 28px
+
+#wrapper
+  background-color: white
+  width: 80%
+  overflow: hidden
+
+#footer
+  background-color: black
+  color: white
+  width: 100%
+  padding: 0
+  float: right
+  padding-top: 2em
+
+#TShad
+  text-shadow: #aaa 2px 2px 2px
+
+#BShad
+  background-color: #EEEEEE
+  box-shadow: 3px 3px 3px 2px #797979
+  height: 100px
+  width: 100px
+  padding: 5px
+
+#BRounded
+  border: 2px solid orange
+  border-radius: 25px
+  width: 100px
+  padding: 10px
+  text-align: center
+
+#Seperators
+  height: 25px
+  width: 100%
+
+.addproj
+  position: relative
+  overflow: hidden
+  width: 480px
+  height: 1800px
+  border: 1px solid black
+
+#slide
+  position: absolute
+  left: -1000px
+  width: 1000px
+  height: 1000px
+  background: red
+  transition: 1s
+
+.addproj:hover #slide
+  transition: 1s
+  left: 0
+
+#motion
+  color: white
+  background: linear-gradient(black, grey, black)
+  width: 50%
+  height: 100%
+  margin: 0px auto
+  padding: 0 auto
+  position: fixed
+  font-size: 12px
+  white-space: nowrap
+  -moz-animation: caption 50s linear
+  -webkit-animation: caption 50s linear
+  animation-duration: 15s
+  animation-timing-function: linear
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
+  transition: width 0.35s ease-out-in
+  transition-duration: 2s
+  transition-timing-function: linear
+  &:hover
+    width: 100%
+    height: 100%
+
+@-moz-keyframes caption
+  0%
+    margin-left: -590px
+
+  25%
+    margin-left: 80px
+
+  50%
+    margin-left: 80px
+
+  75%
+    margin-left: 80px
+
+  100%
+    margin-left: 80px
+
+
+@-webkit-keyframes caption
+  0%
+    margin-left: -590px
+
+  25%
+    margin-left: 0%
+
+  50%
+    margin-left: 0%
+
+  75%
+    margin-left: 0%
+
+  100%
+    margin-left: 0%
+
+
+.margin
+  margin-left: 0%

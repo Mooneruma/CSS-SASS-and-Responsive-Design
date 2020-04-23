@@ -1,0 +1,200 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- head does not display-->
+<title>home</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+	<body>
+		<style>
+	
+	*{
+		margin: auto;
+		padding: 0;
+		
+	}
+	
+	header{
+		background-color: white;
+		color: red;
+		padding-bottom: 0.3em;
+		font-family: "Impact", Charcoal, sans-serif;
+		font-size: 72px;
+		text-align: center;
+	}
+	
+	
+	body{
+		background-image: url("coolBackground.jpg");
+		text-align: left;
+	}
+
+	#sidebar{
+		background-color: white; 
+		box-shadow:3px 3px 3px 2px #797979;
+		height: 50px;
+		width: 100px;
+		padding: 5px;
+		text-align: center;
+		width: 23%;
+		float: left;
+		border: solid thick;
+		margin-top: 2em;
+	}
+
+	#main{
+		font-family: "Times New Roman", Times, serif;
+		padding-top: 2em;
+		text-size: 28px;
+	}
+	
+	#wrapper{
+		background-color: white;
+		width: 80%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	#footer{
+		background-color: black;
+		color: white;
+		width: 100%; 
+		padding: 0;
+		float: right;
+		padding-top: 2em;
+	}
+	
+	#TShad{
+		 text-shadow: #aaa 2px 2px 2px;
+	}
+	
+	#BShad{
+		background-color: #EEEEEE; 
+		box-shadow:3px 3px 3px 2px #797979; 
+		height: 100px;
+		width: 100px; 
+		padding: 5px;
+	}
+	
+	#BRounded{
+		border: 2px solid orange;
+		border-radius : 25px;
+		width: 100px;
+		padding: 10px ;
+		text-align:center;
+	}
+	
+	#Seperators{
+		height: 25px;
+		width: 100%; 
+	}
+	
+	
+
+
+	</style>
+		<header>
+			<div class = "page-header">
+				<i>METAL GEAR FANPAGE</i>
+			</div>
+		</header>
+		<div id = "wrapper">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Metal Gear Fan Page</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class=>
+							<a href="bootst.html">Home</a>
+						</li>
+						<li class="active">
+							<a href="form.html">Form</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div id="Seperators"></div>
+			<div id="Seperators"></div>
+			<content id = "main">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="exampleSelect1">How many metal Gear Titles do you own</label>
+								<select class="form-control" id="exampleSelect1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleSelect2">Which is your favorite</label>
+								<select multiple class="form-control" id="exampleSelect2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleTextarea">Favorite Metal Gear moment</label>
+								<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputFile">Profile Image</label>
+								<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+									<small id="fileHelp" class="form-text text-muted"></small>
+								</div>
+								<fieldset class="form-group">
+									<legend>Radio buttons</legend>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one Solid Snake is the best protagonist.
+      
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two Big Boss is the best protagonist.
+      
+												</label>
+											</div>
+											<div class="form-check disabled">
+												<label class="form-check-label">
+													<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        No opinion
+      
+													</label>
+												</div>
+											</fieldset>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input">
+      Would you like to recieve emails for updated content.
+    
+													</label>
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+											</form>
+										</content>
+									</div>
+									<content id ="footer">
+		Made for edjucational purposes.
+	</content>
+									<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+								</body>
+							</html>

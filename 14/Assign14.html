@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<!-- head does not display-->
+		<title>home</title>
+	</head>
+	
+	<body>
+	
+		<link rel="stylesheet" type="text/css" href="SassCube.scss">
+	
+	<style>
+	
+	*{
+		margin: auto;
+		padding: 0;
+		
+	}
+	
+	header{
+		  /* Old browsers */
+  background: -moz-linear-gradient(top, orange 0%, #666666 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, orange), color-stop(100%, #666666));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, orange 0%, #666666 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, orange 0%, #666666 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, orange 0%, #666666 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, orange 0%, #666666 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 4px;
+  @include transition(background-color 1s .5s, color 2s);
+		color: white;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+	}
+	
+	body{
+		background-image: url("image/fractal-1224853_1280.jpg");
+		text-align: center;
+	}
+
+	#sidebar{
+		background-color: white; 
+		box-shadow:3px 3px 3px 2px #797979;
+		height: 50px;
+		width: 100px;
+		padding: 5px;
+		text-align: center;
+		width: 23%;
+		float: left;
+		border: solid thick;
+		margin-top: 2em;
+	}
+
+	#main{
+		padding-top: 2em;
+		font-size: large;
+	}
+	
+	#wrapper{
+		background-color: white;
+		width: 800px;
+		padding-bottom: 5%;
+	}
+	
+	#footer{
+		background-color: black;
+		color: white;
+		width: 100%; 
+		padding: 0;
+		float: right;
+		margin-top: 70%;
+		padding-top: 2em;
+	}
+	
+	#TShad{
+		 text-shadow: #aaa 2px 2px 2px;
+	}
+	
+	#BShad{
+		background-color: #EEEEEE; 
+		box-shadow:3px 3px 3px 2px #797979; 
+		height: 100px;
+		width: 100px; 
+		padding: 5px;
+	}
+	
+	#BRounded{
+		border: 2px solid orange;
+		border-radius : 25px;
+		width: 100px;
+		padding: 10px ;
+		text-align:center;
+	}
+	
+	#Seperators{
+		background-color: black; 
+		height: 25px;
+		width: 100%; 
+	}
+	
+	
+	body {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial;
+}
+
+.separator {
+  margin-top: 40px;
+}
+
+/* 3D Cube */
+.space3d {
+  perspective: 1000px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  display: inline-block;
+}
+
+._3dbox {
+  display: inline-block;
+  transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+}
+
+._3dface {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid #888;
+  background: #FFF;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.3);
+  color: #333;
+  line-height: 250px;
+  opacity: 0.8;
+}
+
+._3dface--front {
+  width: 250px;
+  height: 250px;
+  transform: translate3d(0, 0, 125px);
+}
+
+._3dface--top {
+  width: 250px;
+  height: 250px;
+  transform: rotateX(90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--bottom {
+  width: 250px;
+  height: 250px;
+  transform: rotateX(-90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--left {
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  margin-left: -125px;
+  transform: rotateY(-90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--right {
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  margin-left: -125px;
+  transform: rotateY(90deg) translate3d(0, 0, 125px);
+}
+
+._3dface--back {
+  width: 250px;
+  height: 250px;
+  transform: rotateY(180deg) translate3d(0, 0, 125px);
+}
+
+#radio-left:checked ~ .space3d ._3dbox {
+  transform: rotateY(90deg);
+}
+
+#radio-right:checked ~ .space3d ._3dbox {
+  transform: rotateY(-90deg);
+}
+
+#radio-bottom:checked ~ .space3d ._3dbox {
+  transform: rotateX(90deg);
+}
+
+#radio-top:checked ~ .space3d ._3dbox {
+  transform: rotateX(-90deg);
+}
+
+#radio-back:checked ~ .space3d ._3dbox {
+  transform: rotateY(180deg);
+}
+
+._3dface--front {
+  background: url(http://4.bp.blogspot.com/_N-36xJMPdm4/SV23X_3xTpI/AAAAAAAAA0A/V6Ss_jJ36IY/s320/Trifid+Nebula+by+Sefick-cropped.jpg);
+  background-size: 100%;
+}
+
+._3dface--left {
+  background: url(http://1.bp.blogspot.com/_35cfqJpdIFg/S0_RcFR34gI/AAAAAAAAASQ/DV28rVxAgU8/s320/Arches+star+cluster.jpg);
+  background-size: auto 100%;
+}
+
+._3dface--right {
+  background: url(https://static1.squarespace.com/static/57cf7164e3df2804a338bf24/t/5819b459bebafb322e6648f9/1478081853984/);
+  background-size: auto 100%;
+}
+
+._3dface--top {
+  background: url(http://1.bp.blogspot.com/-cSz1xO_ATf8/VZQyNMfh8EI/AAAAAAAAa3Q/hQPO_uQHyy4/s320/10_2014_Fireworks_7050094_PS_Andy%2BMars.jpg);
+  background-size: auto 100%;
+}
+
+._3dface--bottom {
+  background: url(https://1.bp.blogspot.com/-PcytXlYjHdA/VbVx27xPb7I/AAAAAAAAnR4/sOiRBL4mJ9s/s1600/giphycat5.gif);
+  background-size: auto 100%;
+}
+
+._3dface--back {
+  background: url(https://scontent.cdninstagram.com/t/s320x320/16907070_425359081142615_3036406410708516864_n.jpg);
+  background-size: auto 100%;
+}
+
+	
+
+	</style>
+
+<div id = "wrapper">	
+		<header>
+			<u><h1>Kmoonpage.com</h1></u>
+		</header>
+	
+		<content id = "main">
+		
+		3D animation example
+Edit
+        <input type="radio" checked id="radio-front" name="select-face"/> 
+		<input type="radio" id="radio-left" name="select-face"/>
+		<input type="radio" id="radio-right" name="select-face"/> 
+		<input type="radio" id="radio-top" name="select-face"/>  
+		<input type="radio" id="radio-bottom" name="select-face"/>
+		<input type="radio" id="radio-back" name="select-face"/>
+		<div class="separator"></div>
+		<div class="space3d">      
+			<div class="_3dbox">
+				<div class="_3dface _3dface--front"></div>
+				<div class="_3dface _3dface--top"></div>
+				<div class="_3dface _3dface--bottom"></div>
+				<div class="_3dface _3dface--left"></div>
+				<div class="_3dface _3dface--right"></div>
+				<div class="_3dface _3dface--back"></div>
+			</div>
+		</div>
+		<div class="separator"></div>
+		
+		</content>
+
+		
+	
+	<content id ="footer">
+		Made for edjucational purposes.
+	</content>
+</div>	
+	</body>
+
+</html>

@@ -1,0 +1,108 @@
+$color_1: white;
+$background_color_1: black;
+$background_color_2: white;
+$background_color_3: #EEEEEE;
+$background_color_4: grey;
+
+/*# sourceMappingURL=Output.css.map */
+* {
+	margin: auto;
+	padding: 0;
+}
+header {
+	background-color: $background_color_1;
+	color: $color_1;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+body {
+	background-image: url("image/fractal-1224853_1280.jpg");
+	text-align: center;
+		@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+#main {
+	padding-top: 2em;
+	font-size: large;
+	margin-top: 30%;
+}
+#sidebar {
+	background-color: $background_color_2;
+	box-shadow: 3px 3px 3px 2px #797979;
+	height: 50px;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	width: 23%;
+	float: left;
+	border: solid thick;
+	margin-top: 2em;
+}
+#wrapper {
+	background-color: $background_color_2;
+	width: 800px;
+	padding-bottom: 5%;
+}
+#footer {
+	background-color: $background_color_1;
+	color: $color_1;
+	width: 100%;
+	padding: 0;
+	float: right;
+	margin-top: 70%;
+	padding-top: 2em;
+}
+#TShad {
+	text-shadow: #aaa 2px 2px 2px;
+}
+#BShad {
+	background-color: $background_color_3;
+	box-shadow: 3px 3px 3px 2px #797979;
+	height: 100px;
+	width: 100px;
+	padding: 5px;
+}
+#BRounded {
+	border: 2px solid orange;
+	border-radius: 25px;
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+}
+#Seperators {
+	background-color: $background_color_1;
+	height: 25px;
+	width: 100%;
+}
+#RotExmpl {
+	&:hover {
+		width: 200px;
+		height: 150px;
+		background-color: $background_color_4;
+		border: 2px solid black;
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		transition: 2s;
+	}
+}
+#SkewExmpl {
+	&:hover {
+		width: 200px;
+		height: 150px;
+		background-color: $background_color_4;
+		border: 2px solid black;
+		-ms-transform: skew(20deg, 10deg);
+		-webkit-transform: skew(20deg, 10deg);
+		transform: skew(20deg, 10deg);
+		transition: 2s;
+	}
+}

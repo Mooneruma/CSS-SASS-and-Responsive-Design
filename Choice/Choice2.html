@@ -1,0 +1,266 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- head does not display-->
+<title>home</title>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+</head>
+<body>
+	<style>
+	
+	*{
+		margin: auto;
+		padding: 0;
+		
+	}
+	
+	header{
+		background-color: black;
+		color: white;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		font-family: "Impact", Charcoal, sans-serif;
+		font-size: 36px;
+		text-align: center;
+	}
+	
+	body{
+		background-image: url("coolBackground.jpg");
+		text-align: left;
+	}
+
+	#sidebar{
+		background-color: white; 
+		box-shadow:3px 3px 3px 2px #797979;
+		height: 50px;
+		width: 100px;
+		padding: 5px;
+		text-align: center;
+		width: 23%;
+		float: left;
+		border: solid thick;
+		margin-top: 2em;
+	}
+
+	#main{
+		font-family: "Times New Roman", Times, serif;
+		padding-top: 2em;
+		text-size: 28px;
+	}
+	
+	#wrapper{
+		background-color: white;
+		width: 80%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	#footer{
+		background-color: black;
+		color: white;
+		width: 100%; 
+		padding: 0;
+		float: right;
+		padding-top: 2em;
+	}
+	
+	#TShad{
+		 text-shadow: #aaa 2px 2px 2px;
+	}
+	
+	#BShad{
+		background-color: #EEEEEE; 
+		box-shadow:3px 3px 3px 2px #797979; 
+		height: 100px;
+		width: 100px; 
+		padding: 5px;
+	}
+	
+	#BRounded{
+		border: 2px solid orange;
+		border-radius : 25px;
+		width: 100px;
+		padding: 10px ;
+		text-align:center;
+	}
+	
+	#Seperators{
+		height: 25px;
+		width: 100%; 
+	}
+	
+	
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+	</style>
+	<header>
+		<div class = "page-header">
+			<h1>Pure test</h1>
+		</div>
+	</header>
+	
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      Pure Nav
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="Choice.html" target="_blank">Page 1</a>
+	<a href="Choice2.html" target="_blank">Page 2</a>
+  </div>
+</div>
+	
+	<div id = "wrapper">
+		<div id="Seperators"></div>
+		<div id="Seperators"></div>
+		<content id = "main">
+			<div class="pure-g">
+				<div class="pure-u-1-3">				Metal Gear Solid 3: Snake Eater, which is chronologically the first game in the series, introduces a younger version of Big Boss when he was under the codename Snake during the Cold War.[47] The game focuses on the rise of Naked Snake from apprentice to legendary soldier as well as the downfall of his mentor and matriarchal figure, The Boss. After The Boss defects to the Soviet Union, Snake is sent into Russia to kill The Boss and end the threat posed by Yevgeny Borisovitch Volgin, a GRU colonel with plans to overthrow the Soviet government. The origins of the Patriots are also explored in the game.
+            <div id="Seperators"></div>	
+			
+            The next title, Metal Gear Solid: Peace Walker, is set ten years after the events of Snake Eater and returns to the story of the young Big Boss. Now the head of the mercenary corporation MSF (Militaires Sans Frontières), Big Boss discovers that nuclear warheads are being transported to Latin America and decides that he must put a stop to that. Peace Walker features an entirely new cast of characters to provide both aid and intel for Big Boss. A few characters from later games, such as a younger Miller, make appearances in the game.
+			<br><img src = "Sons_big_boss.jpg" align="center" height="50%" width="50%"  style="padding: 10px"/>
+          
+		  <div id="Seperators"></div>
+			</div>
+			
+			</div>
+				<div class="pure-u-1-3">							Metal Gear Solid V: The Phantom Pain, serves as the direct sequel to Peace Walker and is composed of two chapters similar to the Tanker and Plant chapters in Sons of Liberty. The prologue, Ground Zeroes, is set a few weeks after the final mission in Peace Walker, as Big Boss is tasked with rescuing two VIPs from a US military black site on the coast of Cuba. Big Boss' mission coincides with a visit to Mother Base by the IAEA, which turns out to be a cover for an attack on Mother Base orchestrated by the mysterious organization XOF.<br>				<img src="best-metal-gear-solid-game-xl.jpg" align="left" height="50%" width="100%" /> 
+<br>In the chaos, Big Boss' helicopter collides with another, and he then falls into a coma for nine years, which leads to the events of the main chapter, The Phantom Pain. The basis of the main story revolves around Big Boss forming a new private military company, the "Diamond Dogs", to retaliate for the destruction of MSF and the loss of his comrades. However, this "Big Boss" is revealed to be in fact be a body double, who was brainwashed to believe himself to be the real Big Boss, while the real Big Boss went into hiding to create Outer Heaven.
+            <div id="Seperators"></div>
+			            
+			<br>
+  </div>
+				<div class="pure-u-1-3">				
+				            Metal Gear Solid elaborates on the storyline of the earlier games and reveals that Solid Snake is a genetic clone of Big Boss, created as part of a secret government project. A new antagonist is introduced in the form of Liquid Snake, Snake's twin brother who takes control of FOXHOUND after Snake's retirement. Liquid and FOXHOUND take control of a nuclear weapons disposal facility in Alaska and commandeer REX, the next-generation Metal Gear weapons platform being tested there. They threaten to detonate REX's warhead unless the government turns over the remains of Big Boss. Solid Snake destroys Metal Gear REX and kills each of the renegade FOXHOUND members with the exception of Revolver Ocelot.
+            <div id="Seperators"></div>	
+			<br>
+			<div id="Seperators"></div>	
+            Metal Gear Solid 4: Guns of the Patriots deals with a rapidly aging Solid Snake (now branded Old Snake) who is still on his quest to find and defeat Revolver Ocelot, now known as Liquid Ocelot. Despite the destruction of the Arsenal Gear in Sons of Liberty, the Patriots have continued in their plans to influence the course of human history, installing artificial intelligence systems around the world. Ocelot, opposed to this, has assembled armies with which to fight back and intends to hijack their entire operating system for his own ends. Solid Snake's objective later changes to destroying the artificial intelligences of the Patriots and stop their oppression. After he and his allies succeed, Snake decides to live out his life peacefully.
+            <div id="Seperators"></div>
+
+				</div>
+			<div id="Seperators"></div>
+			<div id="Seperators"></div>
+			<form class="pure-form">
+				<fieldset>
+					<legend>A compact inline form</legend>
+					<input type="email" placeholder="Email">
+						<input type="password" placeholder="Password">
+							<label for="remember">
+								<input id="remember" type="checkbox"> Remember me
+        
+								</label>
+								<button type="submit" class="pure-button pure-button-primary">Sign in</button>
+							</fieldset>
+						</form>
+					</content>
+				</div>
+				<content id ="footer">
+		Made for edjucational purposes.
+	</content>
+			</body>
+		</html>
